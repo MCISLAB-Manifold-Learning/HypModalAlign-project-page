@@ -57,7 +57,7 @@
   <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
   <meta name="citation_publication_date" content="2026">
   <meta name="citation_conference_title" content="ICLR 2026 (Poster)">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
+  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2510.27391.pdf">
   
   <!-- Additional SEO -->
   <meta name="theme-color" content="#2563eb">
@@ -254,16 +254,16 @@
                 <a href="https://wu-yuwei-bit.github.io/" target="_blank">Yuwei Wu</a><sup>1,2</sup>,
               </span>
               <span class="author-block">
-                <a href="https://zhigao2017.github.io/" target="_blank">Zhi Gao</a><sup>1</sup>,
+                <a href="https://zhigao2017.github.io/" target="_blank">Zhi Gao</a><sup>1,2</sup>,
               </span>
               <span class="author-block">
                 <a href="https://github.com/Pengxiang-Li" target="_blank">Pengxiang Li</a><sup>1</sup>,
               </span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=Sl6TV7gAAAAJ&hl=en" target="_blank">Yunde Jia</a><sup>2,1</sup>,
+                <a href="https://scholar.google.com/citations?user=Sl6TV7gAAAAJ&hl=en" target="_blank"><strong>Yunde Jia</strong></a><sup>2,1</sup>,
               </span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=Z9gvBegAAAAJ&hl=en" target="_blank">Mehrtash Harandi</a><sup>3</sup>
+                <a href="https://scholar.google.com/citations?user=Z9gvBegAAAAJ&hl=en" target="_blank"><strong>Mehrtash Harandi</strong></a><sup>3</sup>
               </span>
             </div>
 
@@ -271,7 +271,11 @@
                     <!-- Affiliations and venue -->
                     <span class="author-block">
                       <small>
-                        <sup>1</sup> Beijing Key Laboratory of Intelligent Information Technology, School of Computer Science &amp; Technology, Beijing Institute of Technology
+                        <sup>1</sup> Beijing Key Laboratory of Intelligent Information Technology, School of Computer Science &amp; Technology,
+                      </small>
+                      <br>
+                      <small>
+                        Beijing Institute of Technology
                       </small>
                       <br>
                       <small>
@@ -349,33 +353,14 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">our method</h2>
+        <h2 class="title is-3">Our Method</h2>
         <div class="content has-text-centered">
           <img src="static/images/pipeline-v2.png" alt="Pipeline overview" class="fullwidth-image" loading="lazy">
         </div>
       </div>
     </div>
   </div>
-</section>
-
-
-<!-- Image carousel removed as requested -->
-
-
-
-
-<!-- Video presentation section removed as requested -->
-
-
-<!-- Video carousel section removed as requested -->
-
-
-
-
-
-
 <!-- Poster section removed as requested -->
-
 
 
 <!-- Experimental Results -->
@@ -527,22 +512,75 @@
   </div>
 </section>
 
+
+<!-- Visualization: Learned Representations -->
+<section class="section" id="viz-representations">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths has-text-centered">
+        <h2 class="title is-3">Learned Representations</h2>
+        <p class="has-text-grey is-size-6" style="margin-bottom: 1rem;">
+          Our method demonstrates improved feature separability across taxonomic categories.
+        </p>
+        <img src="static/images/viz_feature-v2.png" alt="Learned feature representations with improved separability across taxonomic categories" class="fullwidth-image" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Visualization: Learned Representations -->
+
+
+<!-- Visualization: Attention maps -->
+<section class="section" id="viz-attention">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths has-text-centered">
+        <h2 class="title is-3">Attention Visualization</h2>
+        <p class="has-text-grey is-size-6" style="margin-bottom: 1rem;">
+          Our model adaptively generates semantic-aware visual features by attending to different regions corresponding to each taxonomic granularity (from coarse to fine, left to right).
+        </p>
+        <div class="columns is-variable is-3 is-vcentered">
+          <!-- Left: Baseline -->
+          <div class="column">
+            <div class="box">
+              <p class="has-text-weight-semibold is-size-6">Baseline</p>
+              <img src="static/images/viz_rarespecies_baseline.png" alt="Baseline attention visualization across taxonomic granularity" class="fullwidth-image" loading="lazy">
+            </div>
+          </div>
+          <!-- Right: Ours -->
+          <div class="column">
+            <div class="box">
+              <p class="has-text-weight-semibold is-size-6">Ours</p>
+              <img src="static/images/viz-v4.png" alt="Our model's semantic-aware attention visualization across taxonomic granularity" class="fullwidth-image" loading="lazy">
+            </div>
+          </div>
+        </div>
+        <!-- <p class="has-text-grey is-size-7">Left: baseline. Right: ours.</p> -->
+      </div>
+    </div>
+  </div>
+  </section>
+<!-- End Visualization: Attention maps -->
+
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
+        <h2 class="title">Citation &amp; BibTeX</h2>
         <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
           <i class="fas fa-copy"></i>
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
+      <p class="has-text-grey is-size-6" style="margin-bottom: 0.75rem;">
+        If you find our work useful, please cite:
+      </p>
+      <!-- <pre id="plain-citation"><code>Wu, W., Fan, X., Wu, Y., Gao, Z., Li, P., Jia, Y., & Harandi, M. (2026). Modality Alignment across Trees on Heterogeneous Hyperbolic Manifolds. International Conference on Learning Representations (ICLR).</code></pre> -->
+      <pre id="bibtex-code"><code>@inproceedings{wu2026hypmodalalign,
+  title={Modality Alignment across Trees on Heterogeneous Hyperbolic Manifolds},
+  author={Wu, Wei and Fan, Xiaomeng and Wu, Yuwei and Gao, Zhi and Li, Pengxiang and Jia, Yunde and Harandi, Mehrtash},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2026}
 }</code></pre>
     </div>
 </section>
